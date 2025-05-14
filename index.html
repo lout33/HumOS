@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HumOS Profile Framework</title>
+    <style>
+        :root {
+            --primary-color: #60a5fa;
+            --text-color: #e5e7eb;
+            --bg-color: #111827;
+            --section-bg: #1f2937;
+            --header-bg: #0f172a;
+            --nav-bg: #1e3a8a;
+            --hover-bg: rgba(255, 255, 255, 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        header {
+            background-color: var(--header-bg);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        nav {
+            background-color: var(--nav-bg);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 0.25rem;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: var(--hover-bg);
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .section {
+            background-color: var(--section-bg);
+            border-radius: 0.5rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .copy-btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 0.25rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .copy-btn:hover {
+            background-color: #3b82f6;
+        }
+
+        .copy-btn.success {
+            background-color: #059669;
+            color: white;
+        }
+
+        h1 { font-size: 2.5rem; margin-bottom: 1rem; color: var(--primary-color); }
+        h2 { font-size: 2rem; margin-bottom: 1.5rem; color: #93c5fd; }
+        h3 { font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--primary-color); }
+        h4 { font-size: 1.25rem; margin-bottom: 1rem; color: #93c5fd; }
+        p { margin-bottom: 1.5rem; }
+        ul { margin-left: 2rem; margin-bottom: 1.5rem; }
+        ul ul { margin-bottom: 0.5rem; }
+        li { margin-bottom: 0.5rem; }
+        strong { color: #93c5fd; }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #93c5fd;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .section {
+                padding: 1rem;
+            }
+
+            main {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Human Operating System (HumOS) Profile Framework</h1>
+        <p>A comprehensive framework for personal and professional development</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#purpose">Purpose</a></li>
+            <li><a href="#template">Template</a></li>
+            <li><a href="#questionnaire">Questionnaire</a></li>
+            <li><a href="#example">Example Profile</a></li>
+            <li><a href="#use-cases">Use Cases</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="purpose" class="section">
+            <div class="section-header">
+                <h2>Purpose</h2>
+                <button class="copy-btn" data-section="purpose">Copy Section</button>
+            </div>
+            <p>The <strong>Human Operating System (HumOS) Profile</strong> is a structured framework designed to create a comprehensive representation of an individual. Its primary goal is to enable deeper understanding and facilitate more effective collaboration, whether between humans or between a human and an AI system.</p>
+            <p>By capturing core identity, goals, resources, experiences, mental models, and operational rhythms, the HumOS Profile serves as a foundational document that can:</p>
+            <ul>
+                <li>Enhance self-awareness and personal clarity</li>
+                <li>Streamline onboarding and communication with collaborators or AI assistants</li>
+                <li>Enable personalized support and strategic alignment from AI partners</li>
+                <li>Provide a basis for tracking personal development and strategic shifts over time</li>
+            </ul>
+        </section>
+
+        <section id="template" class="section">
+            <div class="section-header">
+                <h2>Template Structure</h2>
+                <button class="copy-btn" data-section="template">Copy Section</button>
+            </div>
+            <div class="template-content">
+                <h3>SECTION 1: CORE IDENTITY & DRIVERS</h3>
+                <ul>
+                    <li>1.1. Basic Identifiers</li>
+                    <li>1.2. Core Values & Guiding Principles</li>
+                    <li>1.3. Personality & Cognitive Style</li>
+                    <li>1.4. Overarching Life Mission & Long-Term Vision</li>
+                    <li>1.5. Non-Negotiable Foundational Needs</li>
+                </ul>
+
+                <h3>SECTION 2: GOALS & OBJECTIVES HIERARCHY</h3>
+                <ul>
+                    <li>2.1. Broad Life Area Goals</li>
+                    <li>2.2. Specific Focus Area Goals</li>
+                </ul>
+
+                <h3>SECTION 3: OPERATIONAL CAPACITY & RESOURCES</h3>
+                <ul>
+                    <li>3.1. Skills & Proficiencies</li>
+                    <li>3.2. Knowledge Domains</li>
+                    <li>3.3. Tools & Technology Stack</li>
+                    <li>3.4. Financial & Material Resources</li>
+                    <li>3.5. Support Network & Relationships</li>
+                    <li>3.6. Typical Environment & Constraints</li>
+                    <li>3.7. Known Obstacles & Anti-Patterns</li>
+                </ul>
+
+                <h3>SECTION 4: EXPERIENCE & TRACK RECORD</h3>
+                <ul>
+                    <li>4.1. Professional Experience</li>
+                    <li>4.2. Personal & Side Projects</li>
+                    <li>4.3. Certifications & Formal Learning</li>
+                    <li>4.4. Languages</li>
+                </ul>
+
+                <h3>SECTION 5: WORLDVIEWS & MENTAL MODELS</h3>
+                <ul>
+                    <li>5.1. Domain Models</li>
+                    <li>5.2. Key Predictions & Scenarios</li>
+                </ul>
+
+                <h3>SECTION 6: META-COGNITION & LEARNING</h3>
+                <ul>
+                    <li>6.1. Reflection on Past Efforts & Key Learnings</li>
+                    <li>6.2. Preferred Learning Styles & Methods</li>
+                    <li>6.3. Review & Update Cadence</li>
+                </ul>
+
+                <h3>SECTION 7: DAILY OPERATING RHYTHM</h3>
+                <ul>
+                    <li>7.1. Morning Routine</li>
+                    <li>7.2. Mid-day Structure</li>
+                    <li>7.3. Evening Structure</li>
+                    <li>7.4. Night Routine</li>
+                    <li>7.5. Sleep Schedule & Chronotype</li>
+                </ul>
+
+                <h3>SECTION 8: COLLABORATION PREFERENCES</h3>
+                <ul>
+                    <li>8.1. Ideal Collaboration Style</li>
+                    <li>8.2. AI Support Requests</li>
+                    <li>8.3. Communication Preferences</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="questionnaire" class="section">
+            <div class="section-header">
+                <h2>Profile Questionnaire</h2>
+                <button class="copy-btn" data-section="questionnaire">Copy Section</button>
+            </div>
+            <p>Use this questionnaire to help build your HumOS Profile:</p>
+            <div class="questionnaire-content">
+                <h3>Instructions</h3>
+                <p>Please answer the following questions as thoroughly and honestly as possible. This questionnaire will help you build a personalized HumOS Profile, a living document for self-awareness, collaboration, and interaction with AI systems. Some questions are straightforward, while others may require deeper thought. Take your time, and feel free to update your answers later if needed.</p>
+                
+                <h3>SECTION 1: CORE IDENTITY & DRIVERS</h3>
+                <h4>1.1. Basic Identifiers</h4>
+                <ul>
+                    <li>What is your full name?</li>
+                    <li>What is your age?</li>
+                    <li>Where are you currently located (city, country)?</li>
+                    <li>What is your timezone (e.g., GMT-5, EST)?</li>
+                    <li>What is today's date (MM/DD/YYYY)?</li>
+                </ul>
+
+                <h4>1.2. Core Values & Guiding Principles</h4>
+                <ul>
+                    <li>What are your top three core values?</li>
+                    <li>What guiding principles influence your decisions and actions?</li>
+                </ul>
+
+                <h4>1.3. Personality & Cognitive Style</h4>
+                <ul>
+                    <li>What is your MBTI personality type?</li>
+                    <li>What are your primary motivators?</li>
+                    <li>What are your key strengths?</li>
+                    <li>What are your key weaknesses or areas for improvement?</li>
+                </ul>
+
+                <h4>1.4. Overarching Life Mission & Long-Term Vision</h4>
+                <ul>
+                    <li>What is your life mission or purpose in one sentence?</li>
+                    <li>What is your long-term vision for the next 5-10 years?</li>
+                    <li>What key assumptions drive your sense of urgency?</li>
+                    <li>What are your fundamental strategic dilemmas?</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="example" class="section">
+            <div class="section-header">
+                <h2>Example Profile</h2>
+                <button class="copy-btn" data-section="example">Copy Section</button>
+            </div>
+            <div class="example-content">
+                <h3>Sample Profile: John Doe</h3>
+                
+                <h4>SECTION 1: CORE IDENTITY & DRIVERS</h4>
+                <ul>
+                    <li><strong>Basic Identifiers:</strong>
+                        <ul>
+                            <li>Name: John Doe</li>
+                            <li>Age: 35</li>
+                            <li>Location: Anytown, USA</li>
+                            <li>Timezone: GMT-05 (EST)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Core Values:</strong>
+                        <ul>
+                            <li>Integrity</li>
+                            <li>Continuous Improvement</li>
+                            <li>Reliability</li>
+                            <li>Impact</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h4>SECTION 2: GOALS & OBJECTIVES</h4>
+                <ul>
+                    <li><strong>Career:</strong> Attain Senior Principal Engineer role</li>
+                    <li><strong>Financial:</strong> Build diversified investment portfolio</li>
+                    <li><strong>Health:</strong> Maintain fitness through regular exercise</li>
+                    <li><strong>Personal:</strong> Read 12 non-fiction books per year</li>
+                </ul>
+
+                <h4>SECTION 3: OPERATIONAL CAPACITY</h4>
+                <ul>
+                    <li><strong>Technical Skills:</strong>
+                        <ul>
+                            <li>Java (Expert)</li>
+                            <li>Python (Proficient)</li>
+                            <li>SQL (Advanced)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Tools:</strong>
+                        <ul>
+                            <li>IntelliJ IDEA</li>
+                            <li>VS Code</li>
+                            <li>Git, Docker, Jenkins</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="use-cases" class="section">
+            <div class="section-header">
+                <h2>Practical Use Cases</h2>
+                <button class="copy-btn" data-section="use-cases">Copy Section</button>
+            </div>
+            <div class="use-cases-content">
+                <h3>Enhanced Personal Productivity & Goal Alignment</h3>
+                <p>The HumOS Profile can be used to improve personal productivity and maintain goal alignment in several ways:</p>
+                <ul>
+                    <li>Review goals and objectives regularly</li>
+                    <li>Identify and address known obstacles</li>
+                    <li>Align tasks with peak energy times</li>
+                    <li>Use AI assistance for task management</li>
+                </ul>
+
+                <h3>Team Onboarding & Collaboration</h3>
+                <p>HumOS Profiles can streamline team integration by:</p>
+                <ul>
+                    <li>Understanding team members' strengths and skills</li>
+                    <li>Adapting to different communication styles</li>
+                    <li>Providing personalized learning resources</li>
+                    <li>Fostering better interpersonal dynamics</li>
+                </ul>
+
+                <h3>AI Assistance and Support</h3>
+                <p>AI systems can leverage HumOS Profiles to:</p>
+                <ul>
+                    <li>Prioritize tasks based on user goals</li>
+                    <li>Suggest optimal work times</li>
+                    <li>Adapt information presentation</li>
+                    <li>Provide personalized support</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const copyButtons = document.querySelectorAll('.copy-btn');
+        
+        copyButtons.forEach(button => {
+            button.addEventListener('click', async () => {
+                const section = button.getAttribute('data-section');
+                const content = button.parentElement.parentElement.innerText
+                    .replace('Copy Section', '')
+                    .trim();
+
+                try {
+                    await navigator.clipboard.writeText(content);
+                    button.textContent = 'Copied!';
+                    button.classList.add('success');
+                    
+                    setTimeout(() => {
+                        button.textContent = 'Copy Section';
+                        button.classList.remove('success');
+                    }, 2000);
+                } catch (err) {
+                    console.error('Failed to copy:', err);
+                    button.textContent = 'Failed to copy';
+                    
+                    setTimeout(() => {
+                        button.textContent = 'Copy Section';
+                    }, 2000);
+                }
+            });
+        });
+    });
+    </script>
+</body>
+</html>
