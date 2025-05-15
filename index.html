@@ -15,6 +15,8 @@
     <meta name="twitter:description" content="Create your personal operating manual with HumOS - A comprehensive framework for personal and professional development">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <title>HumOS Profile Framework</title>
+    <!-- Add Marked.js -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <style>
         :root {
             --primary-color: #60a5fa;
@@ -134,30 +136,86 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 3rem 2rem;
+            min-height: 400px;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 2rem;
+            color: var(--primary-color);
+        }
+
+        .loading::after {
+            content: "Loading...";
+            animation: dots 1.5s infinite;
+        }
+
+        @keyframes dots {
+            0%, 20% { content: "Loading."; }
+            40% { content: "Loading.."; }
+            60%, 100% { content: "Loading..."; }
+        }
+
+        .error {
+            color: #ef4444;
+            padding: 2rem;
+            text-align: center;
+            background: rgba(239, 68, 68, 0.1);
+            border-radius: 0.5rem;
+            margin: 2rem 0;
         }
 
         .section {
             background-color: var(--section-bg);
             border-radius: 1rem;
             padding: 2.5rem;
-            margin-bottom: 3rem;
+            margin: 2rem auto;
+            max-width: 1200px;
             border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: all 0.3s ease;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
         }
 
-        .section:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        /* Markdown content styling */
+        .section h1 {
+            font-size: 2.5rem;
+            margin: 2rem 0 1rem;
+            color: var(--primary-color);
         }
 
-        .section-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 2rem;
-            padding-bottom: 1rem;
+        .section h2 {
+            font-size: 2rem;
+            margin: 2rem 0 1rem;
+            color: var(--primary-color);
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 0.5rem;
+        }
+
+        .section h3 {
+            font-size: 1.75rem;
+            margin: 1.5rem 0 1rem;
+            color: #93c5fd;
+        }
+
+        .section blockquote {
+            border-left: 4px solid var(--primary-color);
+            margin: 1.5rem 0;
+            padding-left: 1rem;
+            color: #9ca3af;
+        }
+
+        .section pre {
+            background-color: var(--header-bg);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+
+        .section code {
+            background-color: var(--header-bg);
+            padding: 0.2rem 0.4rem;
+            border-radius: 0.25rem;
+            font-family: monospace;
         }
 
         .copy-btn {
@@ -313,31 +371,62 @@
         </ul>
     </nav>
 
-    <main>
-        <section id="purpose" class="section">
-            <div class="section-header">
-                <h2>Purpose</h2>
-                <button class="copy-btn" data-section="purpose">Copy Section</button>
-            </div>
-            <p>The <strong>Human Operating System (HumOS) Profile</strong> is like a detailed guide all about you! It's designed to help you, and others (including AI), understand you better. This makes working together, whether with people or AI, much smoother and more effective.</p>
-            <p>Think of it as your personal blueprint. It captures key aspects like:</p>
-            <ul>
-                <li>Enhance self-awareness and personal clarity</li>
-                <li>Streamline onboarding and communication with collaborators or AI assistants</li>
-                <li>Enable personalized support and strategic alignment from AI partners</li>
-                <li>Provide a basis for tracking personal development and strategic shifts over time</li>
-            </ul>
-<p>Your HumOS Profile is a "living document" – meaning you should update it as you grow, learn, and change.</p>
-        </section>
+    <main id="content" class="section">
+    </main>
 
-        <section id="template" class="section">
-            <div class="section-header">
-                <h2>Template Structure</h2>
-                <button class="copy-btn" data-section="template">Copy Section</button>
-            </div>
-            <div class="template-content">
-                <h3>SECTION 1: WHO YOU ARE (CORE IDENTITY & DRIVERS)</h3>
-                <p><em>This section is about the fundamental things that make you, you.</em></p>
+    <script>
+        // Function to load and render markdown content
+        async function loadMarkdown(file) {
+            const content = document.getElementById('content');
+            content.innerHTML = '<div class="loading"></div>';
+            
+            try {
+                const response = await fetch(file);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const text = await response.text();
+                content.innerHTML = marked.parse(text);
+                
+                // Update active navigation link
+                document.querySelectorAll('nav a').forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('data-md') === file) {
+                        link.classList.add('active');
+                    }
+                });
+            } catch (error) {
+                console.error('Error loading markdown:', error);
+                document.getElementById('content').innerHTML = '<div class="error">Error loading content. Please try again.</div>';
+            }
+        }
+
+        // Update navigation links to load markdown files
+        document.addEventListener('DOMContentLoaded', () => {
+            const links = {
+                'readme.MD': '#purpose',
+                'template02.md': '#template',
+                'questionnaire.md': '#questionnaire',
+                'use_cases.md': '#use-cases'
+            };
+
+            for (const [file, selector] of Object.entries(links)) {
+                const link = document.querySelector(`a[href="${selector}"]`);
+                if (link) {
+                    link.setAttribute('data-md', file);
+                    link.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        loadMarkdown(file);
+                    });
+                }
+            }
+
+            // Load initial content
+            loadMarkdown('readme.MD');
+        });
+    </script>
+</body>
+</html>
                 <ul>
                     <li>1.1. Basic Info (Name, Age, Location, etc.)</li>
                     <li>1.2. What You Believe In (Core Values & Guiding Principles)</li>
@@ -1008,6 +1097,50 @@
     </main>
 
     <script>
+        // Function to load and render markdown content
+        async function loadMarkdown(file) {
+            try {
+                const response = await fetch(file);
+                const text = await response.text();
+                const content = document.getElementById('content');
+                content.innerHTML = marked.parse(text);
+                
+                // Update active navigation link
+                document.querySelectorAll('nav a').forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('data-md') === file) {
+                        link.classList.add('active');
+                    }
+                });
+            } catch (error) {
+                console.error('Error loading markdown:', error);
+            }
+        }
+
+        // Update navigation links to load markdown files
+        document.addEventListener('DOMContentLoaded', () => {
+            const links = {
+                'readme.MD': '#purpose',
+                'template02.md': '#template',
+                'questionnaire.md': '#questionnaire',
+                'use_cases.md': '#use-cases'
+            };
+
+            for (const [file, selector] of Object.entries(links)) {
+                const link = document.querySelector(`a[href="${selector}"]`);
+                if (link) {
+                    link.setAttribute('data-md', file);
+                    link.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        loadMarkdown(file);
+                    });
+                }
+            }
+
+            // Load initial content
+            loadMarkdown('readme.MD');
+        });
+
     document.addEventListener('DOMContentLoaded', function() {
         // GitHub button functionality
         document.querySelector('.github-link a').addEventListener('click', (e) => {
