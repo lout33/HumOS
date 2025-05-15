@@ -45,7 +45,6 @@ Here's a quick look at the main sections you'll fill out to create your profile.
 *   4.1. Your Job History (Professional Experience)
 *   4.2. Projects You've Done for Fun or Learning (Personal & Side Projects)
 *   4.3. Official Qualifications (Certifications & Formal Learning)
-*   4.4. Languages You Speak
 
 ### **SECTION 5: HOW YOU SEE THE WORLD (Your Beliefs & Perspectives - These Can Evolve)**
 *   5.1. How You Understand Specific Areas (e.g., Your take on AI, Market Trends, etc.)
