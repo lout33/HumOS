@@ -223,14 +223,7 @@
     *   **Energizing Environment:** Mission-driven teams with high intellectual curiosity and mutual respect. Clear goals with autonomy on how to achieve them. Opportunities for cross-disciplinary learning.
     *   **Exciting Projects:** Those with high potential for transformative impact, scientifically challenging, requiring novel interdisciplinary approaches.
 
-*   **8.2. AI Support Requests / Areas for Augmentation:**
-    *   **Literature Review & Synthesis:** AI to rapidly scan, summarize, and identify key themes/gaps in vast amounts of scientific literature.
-    *   **Data Analysis & Pattern Recognition:** AI tools to identify subtle patterns or correlations in large ecological or experimental datasets.
-    *   **Grant Proposal & Manuscript Drafting:** AI to assist with structuring initial drafts, checking for clarity, and ensuring all required elements are present.
-    *   **Experimental Design Optimization:** AI to suggest optimal parameters or identify potential confounding variables in complex experiments.
-    *   **Ideal AI Assistant:** A proactive, context-aware research assistant that can anticipate information needs, flag relevant new publications, manage citations, and help streamline workflows without being intrusive.
-
-*   **8.3. Communication Preferences (with AI):**
+*   **8.2. Communication Preferences (with AI):**
     *   Prefers AI to provide structured, verifiable information (e.g., summaries with clear citations/sources).
     *   Values AI that can explain its reasoning or the basis for its suggestions.
     *   Appreciates AI that can adapt its level of detail based on context (e.g., executive summary vs. deep dive).

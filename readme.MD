@@ -64,8 +64,7 @@ Here's a quick look at the main sections you'll fill out to create your profile.
 
 ### **SECTION 8: WORKING WITH OTHERS (How You Like to Collaborate, Including with AI)**
 *   8.1. Your Ideal Way to Work with People 
-*   8.2. How AI Can Help You Best
-*   8.3. Your Ideal Way to Work with AI 
+*   8.2. Your Ideal Way to Work with AI 
 
 ---
 

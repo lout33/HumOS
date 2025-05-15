@@ -206,14 +206,8 @@
     *   Values asynchronous communication for non-urgent matters to maintain focus.
     *   Likes regular check-ins but not constant interruptions.
 
-*   **8.2. AI Support Requests / Areas for Augmentation:**
-    *   **Coding:** Boilerplate code generation, refactoring suggestions, finding bugs.
-    *   **Learning:** Summarizing complex technical documents, finding relevant learning resources.
-    *   **Productivity:** Helping to break down large tasks, suggesting prioritization based on goals, time blocking assistance.
-    *   **Documentation:** Assisting with drafting technical documentation or user guides.
-    *   **Research:** Quickly gathering information on new technologies or solutions.
 
-*   **8.3. Communication Preferences (with AI):**
+*   **8.2. Communication Preferences (with AI):**
     *   Prefers concise and actionable responses.
     *   Values AI that can recall context from previous interactions and this profile.
     *   Appreciates AI that offers options or suggestions rather than prescriptive commands.
