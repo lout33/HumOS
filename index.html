@@ -175,6 +175,12 @@
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
         }
 
+        .content-header {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 2rem;
+        }
+
         /* Markdown content styling */
         .section h1 {
             font-size: 2.5rem;
@@ -371,6 +377,9 @@
     </nav>
 
     <main id="content" class="section">
+        <div class="content-header">
+            <button id="copyButton" class="copy-btn">Copy Content</button>
+        </div>
     </main>
 
     <script>
@@ -385,7 +394,36 @@
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
                 const text = await response.text();
-                content.innerHTML = marked.parse(text);
+                const mainContent = marked.parse(text);
+                
+                content.innerHTML = `
+                    <div class="content-header">
+                        <button id="copyButton" class="copy-btn">Copy Content</button>
+                    </div>
+                    ${mainContent}
+                `;
+                
+                // Add copy functionality
+                const copyButton = document.getElementById('copyButton');
+                copyButton.addEventListener('click', async () => {
+                    try {
+                        const contentDiv = document.getElementById('content');
+                        const textToCopy = contentDiv.innerText.replace('Copy Content', '').trim();
+                        await navigator.clipboard.writeText(textToCopy);
+                        copyButton.textContent = 'Copied!';
+                        copyButton.classList.add('success');
+                        setTimeout(() => {
+                            copyButton.textContent = 'Copy Content';
+                            copyButton.classList.remove('success');
+                        }, 2000);
+                    } catch (err) {
+                        console.error('Failed to copy text:', err);
+                        copyButton.textContent = 'Failed to copy';
+                        setTimeout(() => {
+                            copyButton.textContent = 'Copy Content';
+                        }, 2000);
+                    }
+                });
                 
                 // Update active navigation link
                 document.querySelectorAll('nav a').forEach(link => {
@@ -396,7 +434,7 @@
                 });
             } catch (error) {
                 console.error('Error loading markdown:', error);
-                document.getElementById('content').innerHTML = '<div class="error">Error loading content. Please try again.</div>';
+                content.innerHTML = '<div class="error">Error loading content. Please try again.</div>';
             }
         }
 
