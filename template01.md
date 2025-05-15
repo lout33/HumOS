@@ -200,7 +200,7 @@
 
 ### **SECTION 8: COLLABORATION PREFERENCES & AI INTERACTION MODALITIES**
 
-*   **8.1. Ideal Collaboration Style (with Humans & AI):**
+*   **8.1. Ideal Collaboration Style (with Humans):**
     *   Prefers clear objectives and well-defined tasks.
     *   Appreciates direct, constructive feedback.
     *   Values asynchronous communication for non-urgent matters to maintain focus.

@@ -215,7 +215,7 @@
 
 #### **SECTION 8: WORKING WITH OTHERS (How You Like to Collaborate, Including with AI)**
 
-*   **8.1. Ideal Collaboration Style (with Humans & AI):**
+*   **8.1. Ideal Collaboration Style (with Humans):**
     *   **Communication Channels:** Email for formal documentation/asynchronous updates; Slack/Teams for quick team queries; Scheduled video/in-person meetings for complex discussions and decision-making.
     *   **Value Added to Teams:** Strategic vision, ability to synthesize complex information, rigorous scientific approach, calm under pressure, mentoring junior members.
     *   **Convincing Him:** Robust data, clear logical arguments, demonstrated alignment with mission/values, well-thought-out experimental plans.

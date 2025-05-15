@@ -63,9 +63,9 @@ Here's a quick look at the main sections you'll fill out to create your profile.
 *   7.5. Your Sleep Habits (Sleep Schedule & Chronotype)
 
 ### **SECTION 8: WORKING WITH OTHERS (How You Like to Collaborate, Including with AI)**
-*   8.1. Your Ideal Way to Work with People & AI
+*   8.1. Your Ideal Way to Work with People 
 *   8.2. How AI Can Help You Best
-*   8.3. How You Prefer to Communicate with AI
+*   8.3. Your Ideal Way to Work with AI 
 
 ---
 
