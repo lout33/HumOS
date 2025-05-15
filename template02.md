@@ -213,21 +213,22 @@
 
 ---
 
-#### **SECTION 8: WORKING WITH OTHERS (How You Like to Collaborate, Including with AI)**
 
-*   **8.1. Ideal Collaboration Style (with Humans):**
-    *   **Communication Channels:** Email for formal documentation/asynchronous updates; Slack/Teams for quick team queries; Scheduled video/in-person meetings for complex discussions and decision-making.
-    *   **Value Added to Teams:** Strategic vision, ability to synthesize complex information, rigorous scientific approach, calm under pressure, mentoring junior members.
-    *   **Convincing Him:** Robust data, clear logical arguments, demonstrated alignment with mission/values, well-thought-out experimental plans.
-    *   **Feedback Preference:** Prefers specific, actionable feedback delivered constructively and privately. Aims to provide the same. Values intellectual honesty over politeness if it hinders progress.
-    *   **Energizing Environment:** Mission-driven teams with high intellectual curiosity and mutual respect. Clear goals with autonomy on how to achieve them. Opportunities for cross-disciplinary learning.
-    *   **Exciting Projects:** Those with high potential for transformative impact, scientifically challenging, requiring novel interdisciplinary approaches.
+#### **SECTION 8: INTERACTION & AI COLLABORATION PREFERENCES**
 
-*   **8.2. Communication Preferences (with AI):**
-    *   Prefers AI to provide structured, verifiable information (e.g., summaries with clear citations/sources).
-    *   Values AI that can explain its reasoning or the basis for its suggestions.
-    *   Appreciates AI that can adapt its level of detail based on context (e.g., executive summary vs. deep dive).
-    *   Would value an AI that can handle nuanced scientific language and concepts accurately.
-    *   Prefers AI interactions that are efficient and goal-oriented.
+*   **8.1. General Interaction Style & Environment:**
+    *   **Communication Channels & Style:** Email for formal documentation/asynchronous updates; Slack/Teams for quick team queries (contextual, if AI helps manage his comms); Scheduled video/in-person meetings for complex discussions. For AI: Prefers structured text (reports, summaries), but open to voice for quick data retrieval or task initiation if highly accurate. Values clarity and precision in language.
+    *   **Being Convinced:** Robust data, clear logical arguments, demonstrated alignment with mission/values (Section 1.2, 1.4), well-thought-out experimental plans or strategic proposals. AI should be able to "show its work" or reasoning.
+    *   **Feedback Preference:** Prefers specific, actionable feedback delivered constructively and privately. Aims to provide the same. Values intellectual honesty. AI feedback should be data-driven and clearly articulated.
+    *   **Energizing Work Conditions:** Mission-driven environment with high intellectual curiosity. Clear goals with autonomy on how to achieve them. Opportunities for deep, focused research. AI can help by filtering noise, managing research data, and flagging relevant new publications.
+    *   **Exciting Projects:** Those with high potential for transformative impact, scientifically challenging, requiring novel interdisciplinary approaches. AI could assist by identifying cross-disciplinary connections or novel methodologies.
+
+*   **8.2. AI-Specific Interaction & Augmentation:**
+    *   **Areas for AI Assistance:** Literature review and summarization, experimental design suggestions, advanced data analysis and modeling, drafting grant proposal sections, managing large datasets, identifying potential collaborators or research trends, automating lab report generation from structured data.
+    *   **Ideal AI Assistant Features:** Deep scientific understanding (or ability to learn specialized domains quickly), ability to handle nuanced language, precision, transparency in its reasoning, citeable outputs, ability to integrate with existing research tools (e.g., Zotero, R, Python environments).
+    *   **Preferred AI Communication Style:** Provide structured, verifiable information (e.g., summaries with clear citations/sources). Explain its reasoning or the basis for its suggestions. Adapt its level of detail based on context (e.g., executive summary vs. deep dive). Handle nuanced scientific language and concepts accurately. Efficient and goal-oriented.
+    *   **Desired Level of AI Proactivity:** Moderately proactive. Suggest relevant papers or data based on current research focus. Alert to critical updates in his field. Offer to automate routine data processing steps once a workflow is established.
+    *   **Handling of Information & Uncertainty:** AI must be explicit about confidence levels in its outputs, especially for scientific claims. For sensitive research data, clear protocols for data handling and privacy are essential. If uncertain, AI should state "I don't have enough information to answer that" or "This is speculative based on..."
+    *   **Error Correction & Learning:** Mechanism to easily correct AI's interpretation of scientific concepts or data. AI should confirm understanding of correction and apply it consistently.
 
 ---

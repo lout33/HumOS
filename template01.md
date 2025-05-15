@@ -198,19 +198,25 @@
 
 ---
 
-### **SECTION 8: COLLABORATION PREFERENCES & AI INTERACTION MODALITIES**
+[...]
 
-*   **8.1. Ideal Collaboration Style (with Humans):**
-    *   Prefers clear objectives and well-defined tasks.
-    *   Appreciates direct, constructive feedback.
-    *   Values asynchronous communication for non-urgent matters to maintain focus.
-    *   Likes regular check-ins but not constant interruptions.
+---
 
+### **SECTION 8: INTERACTION & AI COLLABORATION PREFERENCES**
 
-*   **8.2. Communication Preferences (with AI):**
-    *   Prefers concise and actionable responses.
-    *   Values AI that can recall context from previous interactions and this profile.
-    *   Appreciates AI that offers options or suggestions rather than prescriptive commands.
-    *   Open to AI proactively pointing out potential scheduling conflicts or resource needs based on goals.
+*   **8.1. General Interaction Style & Environment:**
+    *   **Communication Channels & Style:** Prefers email for documentation/formal requests, Slack for quick informal queries. Prefers concise, direct communication. For AI: Text-based chat for quick tasks, structured reports/dashboards for data.
+    *   **Being Convinced:** Logical arguments backed by clear data or evidence. Seeing a practical demonstration or a well-structured plan. AI should present options with pros/cons.
+    *   **Feedback:** Appreciates direct, constructive, and private feedback with specific examples. For AI feedback: Clear indication of error, suggestion for correction, and option to "learn" from it.
+    *   **Energizing Work Conditions:** Clear objectives, well-defined tasks, periods of uninterrupted deep work. AI can support this by batching notifications and helping to structure task lists.
+    *   **Exciting Projects & Challenges:** Solving complex technical problems, optimizing existing systems for efficiency, projects with tangible, measurable outcomes.
+
+*   **8.2. AI-Specific Interaction & Augmentation:**
+    *   **Areas for AI Assistance:** Automating repetitive coding tasks (e.g., boilerplate generation), summarizing technical documentation, initial draft of reports based on data, managing and prioritizing task backlog, advanced code analysis for bugs or improvements.
+    *   **Ideal AI Assistant Features:** Efficient, accurate, ability to understand technical context from code or documents, remembers past interactions/corrections, transparent about its knowledge cut-off or limitations.
+    *   **Preferred AI Communication Style:** Concise, actionable responses. Bullet points for summaries. Provide options or suggestions rather than prescriptive commands. Cite sources for external information.
+    *   **Desired Level of AI Proactivity:** Offer suggestions based on current task (e.g., "I see you're working on X, here's a relevant document"). Proactively point out potential scheduling conflicts or resource needs based on goals and project timelines.
+    *   **Handling of Information & Uncertainty:** AI should state when it's speculating or if information is outside its training data. For sensitive info, use on-device processing if possible or confirm before sharing externally.
+    *   **Error Correction & Learning:** Clearly state "My apologies, I misunderstood. Can you clarify X?" and offer a way to "remember this preference/correction".
 
 ---
