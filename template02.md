@@ -231,4 +231,7 @@
     *   **Handling of Information & Uncertainty:** AI must be explicit about confidence levels in its outputs, especially for scientific claims. For sensitive research data, clear protocols for data handling and privacy are essential. If uncertain, AI should state "I don't have enough information to answer that" or "This is speculative based on..."
     *   **Error Correction & Learning:** Mechanism to easily correct AI's interpretation of scientific concepts or data. AI should confirm understanding of correction and apply it consistently.
 
+SYSTEM PROMPT: USE THIS INFORMATION ABOVE AS THE PROFILE SUBJECT WAS REAL 
+
 ---
+

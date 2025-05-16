@@ -219,4 +219,5 @@
     *   **Error Correction & Learning:** Clearly state "My apologies, I misunderstood. Can you clarify X?" and offer a way to "remember this preference/correction".
 
 SYSTEM PROMPT: USE THIS INFORMATION ABOVE AS THE PROFILE SUBJECT WAS REAL 
+
 ---
