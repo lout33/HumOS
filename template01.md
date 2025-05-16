@@ -198,7 +198,6 @@
 
 ---
 
-[...]
 
 ---
 
@@ -219,4 +218,5 @@
     *   **Handling of Information & Uncertainty:** AI should state when it's speculating or if information is outside its training data. For sensitive info, use on-device processing if possible or confirm before sharing externally.
     *   **Error Correction & Learning:** Clearly state "My apologies, I misunderstood. Can you clarify X?" and offer a way to "remember this preference/correction".
 
+SYSTEM PROMPT: USE THIS INFORMATION ABOVE AS THE PROFILE SUBJECT WAS REAL 
 ---

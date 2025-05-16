@@ -5,6 +5,11 @@
 The **HumOS Profile (Human Operating System Profile)** is like creating a detailed "user manual" for yourself, specifically designed to enhance your interaction and collaboration with AI systems! It's a way to gather all the important info about who you are, what you want, and how you work.
 The main idea? To help you understand yourself better and to enable AI systems to interact with you in a more personalized, effective, and aligned manner. It's about enhancing your self-management and your collaboration with AI.
 
+## Quick Demo
+Watch this quick video demonstration to understand how HumOS works:
+
+[![HumOS Demo](https://img.youtube.com/vi/_no23lmF8iQ/0.jpg)](https://youtu.be/_no23lmF8iQ)
+
 Think of it as your personal blueprint for AI synergy. It helps you:
 
 *   **Know Yourself Better:** Get clearer on your own thoughts, goals, and operational style.
